@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="7ca22d95-c8e8-4907-af23-d03099a4dc34" name="Changes" comment="Initial DREX commit" />
+=======
+    <list default="true" id="7ca22d95-c8e8-4907-af23-d03099a4dc34" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/components/AboutSection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/next.config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
+>>>>>>> 3f39e9d (Initial commit)
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+<<<<<<< HEAD
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
     &quot;state&quot;: &quot;OPEN&quot;,
@@ -35,6 +52,8 @@
     &quot;accountId&quot;: &quot;e80b95a6-ade1-4a64-9239-53cf047f2f5d&quot;
   }
 }</component>
+=======
+>>>>>>> 3f39e9d (Initial commit)
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
 }</component>
@@ -50,7 +69,11 @@
   &quot;keyToString&quot;: {
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+<<<<<<< HEAD
     &quot;git-widget-placeholder&quot;: &quot;Rebasing main&quot;,
+=======
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+>>>>>>> 3f39e9d (Initial commit)
     &quot;last_opened_file_path&quot;: &quot;/Users/tiburce/PycharmProjects/drex_project&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -85,6 +108,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1758140212614</updated>
+<<<<<<< HEAD
       <workItem from="1758140213646" duration="26331000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
@@ -120,14 +144,21 @@
       <updated>1758260316664</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+=======
+      <workItem from="1758140213646" duration="25203000" />
+    </task>
+>>>>>>> 3f39e9d (Initial commit)
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Initial DREX commit" />
     <option name="LAST_COMMIT_MESSAGE" value="Initial DREX commit" />
   </component>
+=======
+>>>>>>> 3f39e9d (Initial commit)
 </project>

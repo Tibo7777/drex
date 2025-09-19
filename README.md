@@ -1,33 +1,40 @@
-# DREX (Drone Expertise Services)
-
-DREX is a web application built with **Next.js** to showcase drone and IoT solutions for agriculture.  
-It allows farmers and stakeholders to explore services like drone mapping, AI-powered recommendations, crop monitoring, and more.
-
-## Features
-
-- Display all DREX services with images and descriptions.
-- Detailed page for each service.
-- Responsive design for mobile, tablet, and desktop.
-- Integrated contact section for inquiries.
-- Carousel for team members on the About page.
-
-## Tech Stack
-
-- **Frontend**: Next.js, React, Tailwind CSS
-- **Image Optimization**: Next.js `Image` component
-- **Carousel**: Swiper.js
-- **Hosting**: Vercel (recommended)
+<<<<<<< HEAD
+# drex
+=======
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-### Prerequisites
-
-Make sure you have **Node.js** installed (v18+ recommended).
-
-### Installation
-
-Clone the repository:
+First, run the development server:
 
 ```bash
-git clone https://github.com/Tibo7777/drex.git
-cd drex
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+>>>>>>> 3f39e9d (Initial commit)
