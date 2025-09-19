@@ -19,7 +19,7 @@ export default function AboutPage() {
       name: "Elie PADONOU",
       role: "Founder & Business Development Lead",
       img: "/images/team2.jpg",
-      objectPosition: "center 30%", // décalé légèrement vers le bas
+      objectPosition: "center 30%",
     },
     {
       name: "Esquilin HOUNDOFI",
@@ -31,7 +31,7 @@ export default function AboutPage() {
       name: "Sebastien KOUTA",
       role: "Founder & Field Operation Lead",
       img: "/images/team4.jpg",
-      objectPosition: "center 30%", // décalé légèrement vers le bas
+      objectPosition: "center 30%",
     },
   ];
 
