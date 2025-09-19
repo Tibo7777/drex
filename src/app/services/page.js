@@ -61,16 +61,33 @@ export default function ServicesPage() {
     <React.Fragment>
       <Navbar />
 
-      <section className="py-20 px-4 sm:px-6 lg:px-20">
-        <h1 className="text-4xl font-bold text-green-700 mb-12 text-center">
-          Our Services
-        </h1>
+      {/* Hero Section */}
+      <section
+        className="relative h-[500px] sm:h-[600px] flex items-center justify-center text-center text-white bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/drex-hero7.png')" }}
+      >
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="relative z-10 px-6 max-w-3xl">
+          <h5 className="text-4xl sm:text-5xl text-white font-bold mb-4 drop-shadow-lg">
+            Empowering Agriculture with Drones, IoT & AI
+          </h5>
+          <p className="text-lg sm:text-xl mb-6 text-white drop-shadow-md">
+            Explore our services to monitor crops, optimize irrigation, and get AI-powered insights for better yields.
+          </p>
+        </div>
+      </section>
 
-        {/* Base = 2 columns */}
+      {/* Services Section */}
+      <section id="services" className="py-20 px-4 sm:px-6 lg:px-20">
+        <h2 className="text-4xl font-bold text-green-700 mb-12 text-center">
+          Our Services
+        </h2>
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 sm:gap-8">
           {services.map((service) => (
             <Link key={service.slug} href={`/services/${service.slug}`}>
-              <div className="bg-white shadow rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition flex flex-col">
+              <div className="bg-white shadow rounded-lg overflow-hidden cursor-pointer hover:shadow-lg transition flex flex-col h-full">
+                {/* Image */}
                 <div className="relative h-40 sm:h-52 w-full">
                   <Image
                     src={service.image}
@@ -79,14 +96,16 @@ export default function ServicesPage() {
                     className="object-cover"
                   />
                 </div>
-                <div className="p-3 sm:p-4 flex-1 flex flex-col">
-                  <h2 className="text-lg sm:text-xl font-semibold text-green-600 mb-1">
+
+                {/* Content */}
+                <div className="p-3 sm:p-4 flex flex-col flex-1">
+                  <h2 className="text-lg sm:text-xl font-semibold text-green-600 mb-2">
                     {service.title}
                   </h2>
                   <p className="text-gray-600 text-sm sm:text-base flex-1">
                     {service.description}
                   </p>
-                  <span className="text-green-700 mt-3 font-medium text-sm sm:text-base">
+                  <span className="text-yellow-500 mt-3 font-medium text-sm sm:text-base">
                     Read More →
                   </span>
                 </div>

@@ -49,9 +49,9 @@ export default function Navbar() {
       {isOpen && (
         <ul className="md:hidden bg-white px-6 pb-4 space-y-3 text-green-700 mt-2 font-medium shadow-md">
           <li><a href="/" className="hover:text-green-900 block">Home</a></li>
-          <li><a href="/about" className="hover:text-green-900 block">About</a></li>
           <li><a href="/services" className="hover:text-green-900 block">Services</a></li>
           <li><a href="/testimonials" className="hover:text-green-900 block">Testimonials</a></li>
+           <li><a href="/about" className="hover:text-green-900 block">About</a></li>
           <li><a href="/contact" className="hover:text-green-900 block">Contact</a></li>
         </ul>
       )}
