@@ -11,34 +11,53 @@ export default function AboutPage() {
   const team = [
     {
       name: "Tiburce Ketounou",
-      role: "Founder & CEO",
+      role: "Founder & Technical Director",
       img: "/images/team1.jpg",
-      objectPosition: "top",
+      objectPosition: "top", // centré sur haut
     },
     {
       name: "Elie PADONOU",
-      role: "CTO",
+      role: "Founder & Business Development Lead",
       img: "/images/team2.jpg",
-      objectPosition: "10% 30%", // push image slightly down
+      objectPosition: "center 30%", // décalé légèrement vers le bas
     },
     {
       name: "Esquilin HOUNDOFI",
-      role: "Lead Engineer",
+      role: "Founder & Field Specialist",
       img: "/images/team3.jpg",
-      objectPosition: "center",
+      objectPosition: "center", // centré
     },
     {
       name: "Sebastien KOUTA",
-      role: "Operations Manager",
+      role: "Founder & Field Operation Lead",
       img: "/images/team4.jpg",
-      objectPosition: "10% 30%", // push image slightly down
+      objectPosition: "center 30%", // décalé légèrement vers le bas
     },
   ];
+
+  const renderMember = (member, index) => (
+    <div
+      key={index}
+      className="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center"
+    >
+      <img
+        src={member.img}
+        alt={member.name}
+        className="w-28 h-28 rounded-full mb-3 object-cover"
+        style={{ objectPosition: member.objectPosition }}
+      />
+      <h3 className="text-lg font-semibold text-[color:var(--color-primary)] text-center">
+        {member.name}
+      </h3>
+      <p className="text-gray-600 text-center">{member.role}</p>
+    </div>
+  );
 
   return (
     <div className="bg-white text-gray-900">
       <Navbar />
 
+      {/* Hero Section */}
       <section className="relative bg-[color:var(--color-primary)] text-white py-20 text-center">
         <h1 className="text-5xl font-bold mb-4">About Us</h1>
         <p className="text-lg max-w-2xl mx-auto">
@@ -47,6 +66,7 @@ export default function AboutPage() {
         </p>
       </section>
 
+      {/* Mission Section */}
       <section className="py-16 px-6 max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-[color:var(--color-primary)] mb-6">
           Our Mission
@@ -58,11 +78,13 @@ export default function AboutPage() {
         </p>
       </section>
 
+      {/* Team Section */}
       <section className="py-16 px-6 bg-gray-100">
         <h2 className="text-3xl font-bold text-center text-[color:var(--color-primary)] mb-12">
           Meet Our Team
         </h2>
 
+        {/* Mobile Carousel */}
         <div className="md:hidden">
           <Swiper
             modules={[Pagination]}
@@ -76,39 +98,15 @@ export default function AboutPage() {
                 key={i}
                 className="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center"
               >
-                <img
-                  src={member.img}
-                  alt={member.name}
-                  className="w-28 h-28 rounded-full mb-3 object-cover"
-                  style={{ objectPosition: member.objectPosition }}
-                />
-                <h3 className="text-lg font-semibold text-[color:var(--color-primary)]">
-                  {member.name}
-                </h3>
-                <p className="text-gray-600">{member.role}</p>
+                {renderMember(member, i)}
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
 
+        {/* Desktop Grid */}
         <div className="hidden md:grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          {team.map((member, i) => (
-            <div
-              key={i}
-              className="bg-gray-50 rounded-xl shadow-md p-6 flex flex-col items-center"
-            >
-              <img
-                src={member.img}
-                alt={member.name}
-                className="w-28 h-28 rounded-full mb-3 object-cover"
-                style={{ objectPosition: member.objectPosition }}
-              />
-              <h3 className="text-lg font-semibold text-[color:var(--color-primary)]">
-                {member.name}
-              </h3>
-              <p className="text-gray-600">{member.role}</p>
-            </div>
-          ))}
+          {team.map(renderMember)}
         </div>
       </section>
 
