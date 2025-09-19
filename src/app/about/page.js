@@ -10,7 +10,7 @@ import "swiper/css/pagination";
 export default function AboutPage() {
   const team = [
     {
-      name: "Tiburce Ketounou",
+      name: "Tiburce KETOUNOU",
       role: "Founder & Technical Director",
       img: "/images/team1.jpg",
       objectPosition: "top", // centré sur haut
