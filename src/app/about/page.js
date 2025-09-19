@@ -1,5 +1,7 @@
 "use client";
 
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
 import "swiper/css";
@@ -11,27 +13,32 @@ export default function AboutPage() {
       name: "Tiburce Ketounou",
       role: "Founder & CEO",
       img: "/images/team1.jpg",
+      objectPosition: "top",
     },
     {
       name: "Elie PADONOU",
       role: "CTO",
       img: "/images/team2.jpg",
+      objectPosition: "10% 30%", // push image slightly down
     },
     {
       name: "Esquilin HOUNDOFI",
       role: "Lead Engineer",
       img: "/images/team3.jpg",
+      objectPosition: "center",
     },
     {
       name: "Sebastien KOUTA",
       role: "Operations Manager",
       img: "/images/team4.jpg",
+      objectPosition: "10% 30%", // push image slightly down
     },
   ];
 
   return (
     <div className="bg-white text-gray-900">
-      {/* Hero Section */}
+      <Navbar />
+
       <section className="relative bg-[color:var(--color-primary)] text-white py-20 text-center">
         <h1 className="text-5xl font-bold mb-4">About Us</h1>
         <p className="text-lg max-w-2xl mx-auto">
@@ -40,7 +47,6 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Mission Section */}
       <section className="py-16 px-6 max-w-5xl mx-auto text-center">
         <h2 className="text-3xl font-bold text-[color:var(--color-primary)] mb-6">
           Our Mission
@@ -52,13 +58,11 @@ export default function AboutPage() {
         </p>
       </section>
 
-      {/* Team Section */}
       <section className="py-16 px-6 bg-gray-100">
         <h2 className="text-3xl font-bold text-center text-[color:var(--color-primary)] mb-12">
           Meet Our Team
         </h2>
 
-        {/* Mobile Carousel */}
         <div className="md:hidden">
           <Swiper
             modules={[Pagination]}
@@ -75,9 +79,8 @@ export default function AboutPage() {
                 <img
                   src={member.img}
                   alt={member.name}
-                  className={`w-28 h-28 rounded-full mb-3 object-cover ${
-                    member.name === "Tiburce Ketounou" ? "object-top" : ""
-                  }`}
+                  className="w-28 h-28 rounded-full mb-3 object-cover"
+                  style={{ objectPosition: member.objectPosition }}
                 />
                 <h3 className="text-lg font-semibold text-[color:var(--color-primary)]">
                   {member.name}
@@ -88,7 +91,6 @@ export default function AboutPage() {
           </Swiper>
         </div>
 
-        {/* Desktop Grid */}
         <div className="hidden md:grid md:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {team.map((member, i) => (
             <div
@@ -98,9 +100,8 @@ export default function AboutPage() {
               <img
                 src={member.img}
                 alt={member.name}
-                className={`w-28 h-28 rounded-full mb-3 object-cover ${
-                  member.name === "Tiburce Ketounou" ? "object-top" : ""
-                }`}
+                className="w-28 h-28 rounded-full mb-3 object-cover"
+                style={{ objectPosition: member.objectPosition }}
               />
               <h3 className="text-lg font-semibold text-[color:var(--color-primary)]">
                 {member.name}
@@ -110,6 +111,8 @@ export default function AboutPage() {
           ))}
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 }
