@@ -19,8 +19,8 @@ const services = [
     image: "/images/service-iot.png",
   },
   {
-    slug: "crop-selection",
-    title: "Crop selection",
+    slug: "crop-prediction",
+    title: "Crop prediction",
     description: "Get AI-powered crop advice for better yields.",
     image: "/images/service-ai.png",
   },

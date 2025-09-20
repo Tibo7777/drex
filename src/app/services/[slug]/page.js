@@ -44,8 +44,8 @@ const services = {
     image: "/images/service-iot.png"
   },
 
-  "crop-selection": {
-    title: "Crop Selection (AI-powered)",
+  "crop-prediction": {
+    title: "Crop Prediction (AI-powered)",
     hero: "AI insights to choose the right crop, every season.",
     whatWeProvide: [
       "Machine learning models tailored to local agro-ecological zones.",
